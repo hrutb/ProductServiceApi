@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment.prod';
+import { envrionemnt } from 'src/environments/environment';
 import { Iproduct } from '../model/product.model';
 
 @Injectable({
@@ -10,7 +10,7 @@ export class ProductServiceService {
 
   constructor(private _httpService:HttpClient) { }
 
-private readonly  PRODUCT_BASE =environment.product_base;
+private readonly  PRODUCT_BASE =envrionemnt.Product_base;
 private readonly product_url = `${this.PRODUCT_BASE}/products.json`
 
 
