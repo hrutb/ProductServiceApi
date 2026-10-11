@@ -1,12 +1,13 @@
-<div class="card">
-    <div class="card-header">
-
+<div class="card h-100">
+    <div class="card-header bg-info text-light">
+         <h3>{{postObj.title}}</h3>
     </div>
      <div class="card-body">
-         <figure>
-            <img [src]="" alt="">
-             <figcaption></figcaption>
-         </figure>
+        <p>{{postObj.body}}</p>
+
+    </div>
+     <div class="card-footer  d-flex justify-content-between">
+          <button class="btn btn-outline-primary" (click)="onEditObj(postObj)">Edit</button>
+          <button class="btn btn-outline-danger" (click)="OnRemove(postObj.id)">Remove</button>
      </div>
-     <div class="card-footer"></div>
 </div>
